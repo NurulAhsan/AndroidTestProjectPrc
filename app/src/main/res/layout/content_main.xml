@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Title"
+        android:textColor="#550a18"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="First Name" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:inputType="textPersonName"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Last Name" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:inputType="textPersonName"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Age" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:inputType="number"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Id" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:inputType="number"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/browser_list_fragment_header"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/browser_list_fragment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="submit" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
