@@ -8,24 +8,31 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-
+    Toolbar toolbar;
+    EditText FirstName, LastName, Age, ID, Email, Occupation, Contact, Hobby;
+    Button btnSubmit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        FirstName = findViewById(R.id.FirstName);
+        LastName = findViewById(R.id.LastName);
+        Age = findViewById(R.id.Age);
+        ID = findViewById(R.id.ID);
+        Email = findViewById(R.id.Email);
+        Occupation = findViewById(R.id.Occupation);
+        Contact = findViewById(R.id.Contact);
+        Hobby = findViewById(R.id.Hobby);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        btnSubmit = findViewById(R.id.btnSubmit);
+
+
     }
 
     @Override

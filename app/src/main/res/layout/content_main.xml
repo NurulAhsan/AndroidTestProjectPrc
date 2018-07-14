@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="5dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
@@ -30,11 +31,13 @@
             android:text="First Name" />
 
         <EditText
+            android:id="@+id/FirstName"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="0.8"
             android:background="@drawable/edittext_background"
             android:backgroundTint="@android:color/holo_blue_bright"
+            android:hint="eg:Nurul"
             android:inputType="textPersonName"
             android:paddingEnd="5dp"
             android:paddingStart="5dp"
@@ -56,11 +59,13 @@
             android:text="Last Name" />
 
         <EditText
+            android:id="@+id/LastName"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="0.8"
             android:background="@drawable/edittext_background"
             android:backgroundTint="@android:color/holo_blue_bright"
+            android:hint="eg:Ahsan"
             android:inputType="textPersonName"
             android:paddingEnd="5dp"
             android:paddingStart="5dp"
@@ -82,11 +87,13 @@
             android:text="Age" />
 
         <EditText
+            android:id="@+id/Age"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="0.8"
             android:background="@drawable/edittext_background"
             android:backgroundTint="@android:color/holo_blue_bright"
+            android:hint="eg:29"
             android:inputType="number"
             android:paddingEnd="5dp"
             android:paddingStart="5dp"
@@ -108,11 +115,13 @@
             android:text="Id" />
 
         <EditText
+            android:id="@+id/ID"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="0.8"
             android:background="@drawable/edittext_background"
             android:backgroundTint="@android:color/holo_blue_bright"
+            android:hint="eg:1234567"
             android:inputType="number"
             android:paddingEnd="5dp"
             android:paddingStart="5dp"
@@ -122,23 +131,130 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/browser_list_fragment_header"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:orientation="horizontal"
         android:padding="5dp">
 
-        <Button
-            android:id="@+id/browser_list_fragment_text"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/holo_blue_bright"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp"
-            android:text="submit" />
+            android:layout_weight="0.2"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:hint="eg:xxx@xxx.com"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/holo_red_dark" />
 
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Occupation" />
+
+        <EditText
+            android:id="@+id/Occupation"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:hint="eg:Student"
+            android:inputType="text"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Contact" />
+
+        <EditText
+            android:id="@+id/Contact"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:hint="eg:01XXXXXXX"
+            android:inputType="number"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="Hobby" />
+
+        <EditText
+            android:id="@+id/Hobby"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/edittext_background"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:hint="eg:Travel,Reading"
+            android:inputType="text"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:paddingStart="5dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingEnd="5dp"
+            android:text="submit" />
+
+
+
 
 
 </LinearLayout>
